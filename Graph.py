@@ -19,7 +19,7 @@ def get_graph(x, y):
     grph = []
 
     for y in range(y):
-        grph.append(['.' for i in range(x)])
+        grph.append([' ' for i in range(x)])
 
     grph[centre_y] = ['-' for i in range(x)]
 
@@ -54,5 +54,5 @@ for k in d:
 
 
 for i in r:
-    print(i, '\n')
+    print(str(i).replace("'", '').replace(',', ''), '\n')
 
